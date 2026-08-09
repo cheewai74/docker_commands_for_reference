@@ -1,10 +1,19 @@
 ```
-docker network create postgres-network
+docker ps
+docker run --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=password -e POSTGRES_DB=postgres -p 5432:5432 -d postgres
+docker ps -a
 
-docker run -it -d --name postgres --network postgres-network -e POSTGRES_PASSWORD=password postgres
-
-Enter password: password
-
+Postgres:
 psql -h postgres -U postgres -W
+
+VSCODE / DBeaver:
+| Field                   | Enter       |
+| ----------------------- | ----------- |
+| **Server name**         | `localhost` |
+| **Authentication type** | `Password`  |
+| **User name**           | `postgress` |
+| **Password**            | `password`  |
+| **Database name**       | `postgres`  |
+
 
 ```
