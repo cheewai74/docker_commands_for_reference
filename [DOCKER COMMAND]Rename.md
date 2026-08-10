@@ -1,5 +1,8 @@
 ```
 docker rename <container_id> new_name
 
+E.g:
 docker rename 099806a5a3ecb7a76041282d97d7b00c835a085c1c202f678365609b4766496f kali_linux
+docker rename b79ea7d611fd9e25ab24626ec7c3c852b44c87dd0fd8b72b5cfdac9669ae58b6 debian
+docker rename 378dc58a3443384e690aeff7bc50c3c69c96ddf03f07eeca44a1dfb5ffb9c985 rabbitmq
 ```
